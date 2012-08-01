@@ -1,0 +1,30 @@
+created_at=2011-02-23T22:48:00
+
+Long ago, I used regex's to parse HTML.
+
+They told me it was evil. They told me it was not maintainable. They were right.
+
+But the alternatives were painful. They were clunky. They required me to change the way I approached HTML. They required me to abandon the hipness of css selectors I had embraced with javascript libraries, and ignore the many years spent perfecting my css-foo.
+
+HTML::Parser, HTML::TreeBuilder, I'm sure you're brilliant in your own way. I'm sure you have conquered many lands, and for those who wanted to adapt to your mindset, you brought much happiness.
+
+I wanted a simpler way. jQuery taught us that css selectors are that better way.
+
+Fortunately, Mojo::DOM sprouted up out of the land of <a href="http://mojolicio.us">Mojolicious</a> and cookies and rainbows and unicorns.
+
+<script src="https://gist.github.com/813613.js?file=gistfile1.pl"></script>
+
+Seriously, have you ever seen HTML retrieved, parsed, and processed so nicely in Perl?
+
+Since most of you have used jQuery and/or similiar Javascript libraries, you already know how to use Mojo::Client/DOM. You simply apply your existing Perl & Javascript knowledge, and you're done.
+
+You're not relegated to parsing only web-requested data; you can use Mojo::DOM directly:
+
+<script src="https://gist.github.com/813614.js?file=gistfile1.pl"></script>
+
+Installing is one-step easy:
+<pre class="prettyprint">curl -L get.mojolicio.us | sh</pre>
+
+So now you know: you can leave the cruftiness behind, and hang with the hippest of the hip - there's no need to hide your head in shame when talking with hipsters about the latest Ruby shine.  Shine is external; your Mojo runs deep.
+
+<a href="http://mojolicio.us/perldoc?Mojo/DOM#NAME">Mojo::DOM docs</a> 
