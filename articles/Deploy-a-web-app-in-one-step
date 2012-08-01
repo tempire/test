@@ -1,0 +1,52 @@
+It's easy to run a web app.
+
+As chromatic <a href="http://www.modernperlbooks.com/mt/2012/07/hurdles.html">posted</a>, you can do it in 8 easy steps.  Only 8 hurdles to jump!
+
+That's way too many for me.  It's definitely way too many for a Perl developer to advocate; it's not like we have the hipsters on our side, so we have to do better in order to win mindshare.  Much better.
+
+<img align="right" alt="mojolicious: web in a box" src="http://images.tempi.re/web-in-a-box-feathered-rainbow-20120721-121207.jpg" style="margin-top: 30px;" />
+
+And that's where <a href="http://mojolicio.us">Mojolicious</a> comes in.
+
+Install the toolchain in <em>under 10 seconds</em> with a fresh Perl installation:
+<pre class="prettyprint">curl -L tempi.re/bundles/mojo-deploy-heroku | sh</pre>
+
+Generate an app:
+<pre class="prettyprint">mojo generate lite_app hellomojo</pre>
+
+And that's where my new hipster tool comes in.
+
+<img align="left"  alt="mojo deploy heroku logo" src="http://tempire.github.com/mojolicious-command-deploy-heroku/images/heroku%20cloud%20thing.png" style="margin-top: 30px;" />
+
+<br />
+
+<pre class="prettyprint">hellomojo deploy heroku -n hellomojo</pre>
+
+**BAM.**
+
+**<a href="http://hellomojo.herokuapp.com/">Deployed in just one step</a>**
+
+<em>In less than a minute</em>
+
+You don't have to know how to use git.  Or the Heroku tools.  You don't have to know how Heroku works.  Hell, you don't even need to know what Heroku is, because the command will tell you where to sign up when you're prompted for your credentials.
+
+There are many details involved in running a successful web app, but the name of the game here is accessibility.  Reducing the hurdles, or barriers of entry, allows developers to learn what they need when they need it, and avoid complication until it becomes necessary.
+
+Easy.  Simple.  Accessible.
+
+Speaking of accessibility, we need more than a blog entry and some pod on search.cpan.org; we need a dedicated landing page with docs, workflow, and a screencast demonstrating usage:
+
+<div style="text-align: right;">
+<a href="http://tempire.github.com/mojolicious-command-deploy-heroku/">
+<span style="position: relative;">Deploy Perl Mojolicious web apps to Heroku in one step</span>
+<img class="rounded-corners" alt="screenshot of mojo deploy website" src="http://images.tempi.re/Deploy_Perl_Mojolicious_web_apps_to_Heroku-20120719-013207.png" />
+</a>
+</div>
+
+<br />
+
+Forget shopping.  Let's go programming.
+
+<p align="right">
+<a href="http://twitter.com/tempire">Hey!  Follow me on twitter!</a>
+</p>

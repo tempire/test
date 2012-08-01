@@ -1,0 +1,71 @@
+A less known, but very important feature of <a href="http://mojolicio.us">Mojolicious</a> is the ability to add your own commands to your web application.  These commands can ship with your app, so that your management utilities have direct knowledge of your application.
+
+These are some examples of commands that ship with the framework:
+
+<div class="well" style="overflow: auto; width: 100%; padding: 5px 10px; margin-top: -10px; background-color: #D4EBF7;">
+
+<dl style="width: 33%; float: left;">
+<dt>routes</dt>
+<dd>Prints out the routes of your web app</dd>
+</dl>
+
+<dl style="width: 33%; float: left;">
+<dt>generate makefile</dt>
+<dd>Generates a makefile specifically for your web app</dd>
+</dl>
+
+<dl style="width: 33%; float: left;">
+<dt>inflate</dt>
+<dd>Moves embedded templates into separate template files</dd>
+</dl>
+
+</div>
+
+There are also commands not tied to a specific app:
+
+<div class="well" style="overflow: auto; width: 100%; padding: 5px 10px; margin-top: -10px; background-color: #F5E3D6;">
+
+<dl style="width: 33%; float: left;">
+<dt>generate app</dt>
+<dd>Generates scaffolding for a new web app</dd>
+</dl>
+
+<dl style="width: 33%; float: left;">
+<dt>plugin</dt>
+<dd>Generate scaffolding for a Mojolicious plugin</dd>
+</dl>
+
+<dl style="width: 33%; float: left;">
+<dt>cpanify</dt>
+<dd>Upload a plugin to CPAN</dd>
+</dl>
+
+</div>
+
+Here is the thing to remember:
+
+> It's super easy to write your own command
+
+How many times have you wasted time manually adding your preferred toolkits to your web app?  How about saving yourself some time by throwing this command together?
+
+<pre class="prettyprint">$ <b>mojo generate app boilerplate</b> -w bootstrap -w backbone -w font-awesome</pre>
+
+Or maybe you have little scripts that manage your database, scripts with hard-coded database connection info?  Or maybe you programatically pull config info from a separate file?  Why not make your life easier and get the database connection directly from the app?
+
+With Mojolicious commands, you get direct access to your entire web app for free; you can even run a web request against it to get the results of a route, and use that information in your command.
+
+> There's no difference between the built-in commands and the commands you write yourself.
+
+And it gets even better.  What is the deployment process for your app?  Multiple steps?  Why not simplify it to one step, and *distribute it with your web app*?
+
+<pre class="prettyprint">$ <b>myapp deploy</b></pre>
+
+So much more is possible.  For example, the recently released <a href="http://tempire.github.com/mojolicious-command-deploy-heroku/">deploy heroku</a> eliminates the need to know anything about the deploy platform, instead handling all the details with sensible defaults.
+
+Mojolicious commands are extremely powerful, and CPAN is waiting - what commands have you hoped for in the past?  What can you throw together to make your development that much easier?
+
+Your customized command is only *one subroutine* away!
+
+<a href="http://mojolicio.us/perldoc/Mojolicious/Guides/Cookbook#Adding_commands_to_Mojolicious">
+<img class="thumbnail" alt="screenshot of adding commnds section of mojolicious cookbook" src="http://images.tempi.re/adding-commands-to-mojolicious-cookbook-section-20120722-224951.jpg" />
+</a>
